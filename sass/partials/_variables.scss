@@ -1,0 +1,23 @@
+//Colors
+$color__red: hsl(7, 99%, 70%);
+$color__yellow: hsl(51, 100%, 49%);
+$color__blue: hsl(198, 62%, 26%);
+$color__cyan--desaturated: hsl(167, 40%, 24%);
+$color__cyan--moderate: hsl(168, 34%, 41%);
+
+$color__blue--dark-desaturated: hsl(212, 27%, 19%);
+$color__blue--very-dark-gray: hsl(213, 9%, 39%);
+$color__blue--dark-gray: hsl(232, 10%, 55%);
+$color__blue--gray: hsl(210, 4%, 67%);
+$color__white: hsl(0, 0%, 100%);
+
+//Font Families
+$font-family--major: "Fraunces", serif;
+$font-family--minor: "Barlow", sans-serif;
+
+//Font Size
+$font-size--main: 18px;
+
+//Breakpoints
+$viewport--tablet: 768px;
+$viewport--desktop: 1440px;

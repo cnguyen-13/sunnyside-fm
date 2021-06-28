@@ -19,85 +19,239 @@
 
 	<body>
 		<!-- Hero Section -->
-		<header></header>
+		<header class="hero">
+			<nav class="hero__navbar">
+				<img
+					class="hero__logo"
+					src="./images/hero/logo.svg"
+					alt="Sunnyside Logo"
+				/>
+				<ul class="hero__list">
+					<li class="hero__list-item">
+						<a href="#" class="hero__link">About</a>
+					</li>
+					<li class="hero__list-item">
+						<a href="#" class="hero__link">Services</a>
+					</li>
+					<li class="hero__list-item">
+						<a href="#" class="hero__link">Projects</a>
+					</li>
+					<li class="hero__list-item">
+						<a href="#" class="hero__link">Contact</a>
+					</li>
+				</ul>
+				<img
+					class="hero__hamburger"
+					src="./images/hero/icon-hamburger.svg"
+					alt="Hamburger menu"
+				/>
+			</nav>
+			<h1 class="hero__title">We are creatives</h1>
+			<img
+				class="hero__arrow"
+				src="./images/hero/icon-arrow-down.svg"
+				alt="Arrow pointing downwards"
+			/>
+		</header>
 		<!-- End of Hero Section -->
 
 		<main>
 			<!-- Half and Half Section -->
+			<div class="info">
+				<div class="info__pair">
+					<div class="info__bg info__bg--egg"></div>
+					<section class="info__text">
+						<div class="info__text-content">
+							<h2 class="info__title">Transform your brand</h2>
+							<p class="info__paragraph">
+								We are a full-service creative agency specializing in helping
+								brands grow fast. Engage your clients through compelling visuals
+								that do most of the marketing for you.
+							</p>
+							<a href="#" class="info__cta">Learn more</a>
+						</div>
+					</section>
+				</div>
+				<div class="info__pair">
+					<div class="info__bg info__bg--cup"></div>
+					<section class="info__text">
+						<div class="info__text-content">
+							<h2 class="info__title">Stand out to the right audience</h2>
+							<p class="info__paragraph">
+								Using a collaborative formula of designers, researchers,
+								photographers, videographers, and copywriters, we’ll build and
+								extend your brand in digital places.
+							</p>
+							<a href="#" class="info__cta">Learn more</a>
+						</div>
+					</section>
+				</div>
+			</div>
 			<!-- End of Half and Half Section -->
 
 			<!-- Fruits Section -->
+			<div class="fruits">
+				<div class="fruits__panel fruits__panel--cherry">
+					<section class="fruits__text">
+						<h2 class="fruits__title">Graphic design</h2>
+						<p class="fruits__paragraph">
+							Great design makes you memorable. We deliver artwork that
+							underscores your brand message and captures potential clients’
+							attention.
+						</p>
+					</section>
+				</div>
+				<div class="fruits__panel fruits__panel--orange">
+					<section class="fruits__text">
+						<h2 class="fruits__title">Photography</h2>
+						<p class="fruits__paragraph">
+							Increase your credibility by getting the most stunning,
+							high-quality photos that improve your business image.
+						</p>
+					</section>
+				</div>
+			</div>
 			<!-- End of Fruits Section -->
 
-			<!-- Testimonies Section -->
-			<!-- End of Testimonies Section -->
+			<!-- Testimonials Section -->
+			<section class="testimonials">
+				<h2 class="testimonials__title">Client testimonials</h2>
+				<div class="testimonials__clients">
+					<!-- Review #1 -->
+					<div class="testimonials__client">
+						<img
+							class="testimonials__avatar"
+							src="./images/testimony/image-emily.jpg"
+							alt="Emily R."
+						/>
+						<p class="testimonials__review">
+							We put our trust in Sunnyside and they delivered, making sure our
+							needs were met and deadlines were always hit.
+						</p>
+						<div class="testimonials__reviewer">
+							<h3 class="testimonials__name">Emily R.</h3>
+							<small class="testimonials__profession">Marketing Director</small>
+						</div>
+					</div>
+					<!-- End of Review #1 -->
+
+					<!-- Review #2 -->
+					<div class="testimonials__client">
+						<img
+							class="testimonials__avatar"
+							src="./images/testimony/image-thomas.jpg"
+							alt="Thomas S."
+						/>
+						<p class="testimonials__review">
+							Sunnyside’s enthusiasm coupled with their keen interest in our
+							brand’s success made it a satisfying and enjoyable experience.
+						</p>
+						<div class="testimonials__reviewer">
+							<h3 class="testimonials__name">Thomas S.</h3>
+							<small class="testimonials__profession"
+								>Chief Operating Officer</small
+							>
+						</div>
+					</div>
+					<!-- End of Review #2 -->
+
+					<!-- Review #3 -->
+					<div class="testimonials__client">
+						<img
+							class="testimonials__avatar"
+							src="./images/testimony/image-jennie.jpg"
+							alt="Jennie F."
+						/>
+						<p class="testimonials__review">
+							Incredible end result! Our sales increased over 400% when we
+							worked with Sunnyside. Highly recommended!
+						</p>
+						<div class="testimonials__reviewer">
+							<h3 class="testimonials__name">Jennie F.</h3>
+							<small class="testimonials__profession">Business Owner</small>
+						</div>
+					</div>
+					<!-- End of Review #3 -->
+				</div>
+			</section>
+			<!-- End of Testimonials Section -->
 
 			<!-- Collage Section -->
+			<div class="collage">
+				<div class="collage__item collage__item--milk"></div>
+				<div class="collage__item collage__item--orange"></div>
+				<div class="collage__item collage__item--cone"></div>
+				<div class="collage__item collage__item--sugar-cubes"></div>
+			</div>
 			<!-- End of Collage Section -->
 		</main>
 
 		<!-- Footer Section -->
-		<footer>
-			<img src="./images/hero/logo.svg" alt="" />
+		<footer class="footer">
+			<img
+				class="footer__logo"
+				src="./images/hero/logo.svg"
+				alt="Sunnyside Logo"
+			/>
+
+			<nav class="footer__nav">
+				<ul class="footer__list footer__list--page">
+					<li class="footer__list-item">
+						<a class="footer__link" href="#">About</a>
+					</li>
+					<li class="footer__list-item">
+						<a class="footer__link" href="#">Services</a>
+					</li>
+					<li class="footer__list-item">
+						<a class="footer__link" href="#">Projects</a>
+					</li>
+				</ul>
+			</nav>
+
+			<nav class="footer__nav">
+				<ul class="footer__list footer__list--social">
+					<li class="footer__list-item">
+						<a class="footer__link" href="#"
+							><img
+								class="footer__link-image"
+								src="./images/social/icon-facebook.svg"
+								alt="Facebook Link"
+						/></a>
+					</li>
+					<li class="footer__list-item">
+						<a class="footer__link" href="#"
+							><img
+								class="footer__link-image"
+								src="./images/social/icon-instagram.svg"
+								alt="Instagram Link"
+						/></a>
+					</li>
+					<li class="footer__list-item">
+						<a class="footer__link" href="#"
+							><img
+								class="footer__link-image"
+								src="./images/social/icon-twitter.svg"
+								alt="Twitter Link"
+						/></a>
+					</li>
+					<li class="footer__list-item">
+						<a class="footer__link" href="#"
+							><img
+								class="footer__link-image"
+								src="./images/social/icon-pinterest.svg"
+								alt="Pinterest Link"
+						/></a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="attribution">
+				Challenge by
+				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="#">Christian Nguyen</a>.
+			</div>
 		</footer>
 		<!-- End of Footer Section -->
 	</body>
 </html>
-
-About Services Projects Contact We are creatives Transform your brand We are a
-full-service creative agency specializing in helping brands grow fast. Engage
-your clients through compelling visuals that do most of the marketing for you.
-Learn more Stand out to the right audience Using a collaborative formula of
-designers, researchers, photographers, videographers, and copywriters, we’ll
-build and extend your brand in digital places. Learn more Graphic design Great
-design makes you memorable. We deliver artwork that underscores your brand
-message and captures potential clients’ attention. Photography Increase your
-credibility by getting the most stunning, high-quality photos that improve your
-business image. Client testimonials We put our trust in Sunnyside and they
-delivered, making sure our needs were met and deadlines were always hit. Emily
-R. Marketing Director Sunnyside’s enthusiasm coupled with their keen interest in
-our brand’s success made it a satisfying and enjoyable experience. Thomas S.
-Chief Operating Officer Incredible end result! Our sales increased over 400%
-when we worked with Sunnyside. Highly recommended! Jennie F. Business Owner
-About Services Projects Contact
-
-<!--
-  Sections
-
-  Hero
-    -navbar (hamburger menu mobile /// normal dt)
-    -Main Title
-    -Large Arrow pointing down
-
-  Information (Normal order and down a line mobile /// 2x2 dt w/ orders switched)
-    Yellow BG w/ egg and text
-    Red BG w/ cup and text
-
-  Fruits (down a line mobile /// 2x1 dt note: make sure text is aligned with each other)
-    Cherry w/ text underneath
-    Orange w/ text underneath
-
-  Testimony (down a line mobile /// 3x1 dt)
-    - Subtitle
-    - 3 people
-      a. image
-      b. review
-      c. name / profession
-
-  Pure Graphics Collage (2x2 mobile /// 4x1 dt)
-    - 4 images
-
-  Footer (looks the same on mobile and dt)
-    - 3 lines
-      a. title
-      b. word links
-      c. social media links
-
--->
-
-<!-- <div class="attribution">
-			Challenge by
-			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-				>Frontend Mentor</a
-			>. Coded by <a href="#">Christian Nguyen</a>.
-		</div> -->

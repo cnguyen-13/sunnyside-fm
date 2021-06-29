@@ -2,9 +2,8 @@
 	padding: 3rem 0.6rem;
 
 	&__title {
+		@include majorFont(uppercase);
 		text-align: center;
-		text-transform: uppercase;
-		font-family: $font-family--major;
 		font-size: 1.1rem;
 		letter-spacing: 2px;
 		color: $color__blue--dark-gray;
@@ -23,10 +22,9 @@
 	}
 
 	&__avatar {
+		@include centerImage();
 		width: 25%;
-		display: block;
 		border-radius: 50%;
-		margin: 0 auto;
 		margin-bottom: 2rem;
 	}
 
@@ -36,7 +34,8 @@
 	}
 
 	&__name {
-		font-family: $font-family--major;
+		@include majorFont();
+		color: $color__blue--dark-desaturated;
 		margin-bottom: 0.5rem;
 	}
 

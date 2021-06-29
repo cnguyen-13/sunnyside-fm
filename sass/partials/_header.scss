@@ -29,17 +29,14 @@
 	}
 
 	&__title {
+		@include majorFont(uppercase, 900);
 		text-align: center;
 		color: $color__white;
-		text-transform: uppercase;
-		font-family: $font-family--major;
-		font-weight: 900;
 		letter-spacing: 0.4rem;
 		margin: 4rem 0 3rem 0;
 	}
 
 	&__arrow {
-		display: block;
-		margin: 0 auto;
+		@include centerImage();
 	}
 }

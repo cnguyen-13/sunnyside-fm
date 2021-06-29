@@ -27,10 +27,8 @@
 	}
 
 	&__title {
-		font-family: $font-family--major;
+		@include majorFont(capitalize, 900);
 		margin-bottom: 1.75rem;
-		font-weight: 900;
-		text-transform: capitalize;
 	}
 
 	&__paragraph {

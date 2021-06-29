@@ -4,9 +4,9 @@
 	&__title {
 		@include majorFont(uppercase);
 		text-align: center;
-		font-size: 1.1rem;
-		letter-spacing: 2px;
-		color: $color__blue--dark-gray;
+		font-size: 1rem;
+		letter-spacing: 4px;
+		color: $color__blue--gray;
 		margin: 2rem 0 3rem 0;
 	}
 

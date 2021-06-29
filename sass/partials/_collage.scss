@@ -1,0 +1,8 @@
+.collage {
+	display: flex;
+	flex-wrap: wrap;
+
+	&__image {
+		width: 50%;
+	}
+}

@@ -1,11 +1,10 @@
 .fruits {
 	&__panel {
+		@include fullCoverBg();
 		text-align: center;
 		display: flex;
 		justify-content: center;
 		align-items: flex-end;
-		background-size: cover;
-		background-repeat: no-repeat;
 		min-height: 30rem;
 		padding: 3rem 0.6rem; //might need later
 
@@ -30,6 +29,8 @@
 	&__title {
 		font-family: $font-family--major;
 		margin-bottom: 1.75rem;
+		font-weight: 900;
+		text-transform: capitalize;
 	}
 
 	&__paragraph {

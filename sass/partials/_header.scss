@@ -1,0 +1,45 @@
+.hero {
+	@include fullCoverBg();
+	background-image: url("../../images/mobile/image-header.jpg");
+	min-height: 30rem;
+	padding: 2rem 0.6rem;
+
+	&__navbar {
+		padding: 0 0.5rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+	}
+
+	&__list {
+		display: none;
+	}
+
+	&__list-item {
+	}
+
+	&__link {
+	}
+
+	&__hamburger {
+		cursor: pointer;
+	}
+
+	&__title {
+		text-align: center;
+		color: $color__white;
+		text-transform: uppercase;
+		font-family: $font-family--major;
+		font-weight: 900;
+		letter-spacing: 0.4rem;
+		margin: 4rem 0 3rem 0;
+	}
+
+	&__arrow {
+		display: block;
+		margin: 0 auto;
+	}
+}

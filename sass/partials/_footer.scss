@@ -1,0 +1,41 @@
+.footer {
+	padding: 3rem 0.6rem;
+	background-color: $color__green;
+	min-height: 20rem;
+
+	&__logo {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 2rem;
+	}
+
+	&__list {
+		list-style-type: none;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 4rem;
+
+		&--page {
+			gap: 3.5rem;
+		}
+
+		&--social {
+			gap: 2rem;
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__link {
+		color: $color__cyan--moderate;
+		text-decoration: none;
+	}
+
+	&__attribution {
+		font-size: 11px;
+		text-align: center;
+	}
+
+	&__attribution-link {
+		color: hsl(228, 45%, 44%);
+	}
+}

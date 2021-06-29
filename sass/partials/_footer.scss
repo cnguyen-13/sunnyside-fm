@@ -7,6 +7,7 @@
 		display: block;
 		margin: 0 auto;
 		margin-bottom: 2rem;
+		transform: scale(1.4);
 	}
 
 	&__list {
@@ -16,11 +17,11 @@
 		margin-bottom: 4rem;
 
 		&--page {
-			gap: 3.5rem;
+			gap: 3rem;
 		}
 
 		&--social {
-			gap: 2rem;
+			gap: 1.25rem;
 			margin-bottom: 2rem;
 		}
 	}

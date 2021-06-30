@@ -5,8 +5,9 @@
 		display: flex;
 		justify-content: center;
 		align-items: flex-end;
-		min-height: 30rem;
-		padding: 3rem 0.6rem; //might need later
+		height: $height__fruits;
+		// min-height: 30rem;
+		padding: $padding__mobile;
 
 		&--cherry {
 			background-image: url("../../images/mobile/image-graphic-design.jpg");
@@ -21,6 +22,7 @@
 		&--cherry {
 			color: $color__cyan--desaturated;
 		}
+
 		&--orange {
 			color: $color__blue;
 		}
@@ -41,6 +43,7 @@
 		display: flex;
 
 		&__panel {
+			padding: $padding__fruits;
 			width: 0;
 			flex: 1;
 

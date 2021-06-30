@@ -1,5 +1,5 @@
 .footer {
-	padding: 3rem 0.6rem;
+	padding: $padding__mobile;
 	background-color: $color__green;
 	min-height: 20rem;
 
@@ -32,11 +32,17 @@
 	}
 
 	&__attribution {
-		font-size: 11px;
+		font-size: 12px;
 		text-align: center;
 	}
 
 	&__attribution-link {
 		color: hsl(228, 45%, 44%);
+	}
+}
+
+@media (min-width: $viewport--desktop) {
+	.footer {
+		padding: $padding__main;
 	}
 }

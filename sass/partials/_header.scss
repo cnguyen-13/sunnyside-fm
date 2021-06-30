@@ -1,11 +1,10 @@
 .hero {
 	@include fullCoverBg();
 	background-image: url("../../images/mobile/image-header.jpg");
-	min-height: 80vh;
-	padding: 2rem 0.6rem;
+	height: $height__hero;
+	padding: $padding__nav;
 
 	&__navbar {
-		padding: 0 0.5rem;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -41,14 +40,14 @@
 	}
 }
 
-@media (min-width: $viewport--desktop) {
+@media (min-width: $viewport--tablet) {
 	.hero {
 		background-image: url("../../images/desktop/image-header.jpg");
 
 		&__list {
 			list-style-type: none;
 			display: flex;
-			gap: 3rem;
+			gap: 2.5rem;
 		}
 
 		&__link {
@@ -56,16 +55,27 @@
 			text-decoration: none;
 
 			&--contact {
+				@include majorFont(uppercase);
+				padding: 1rem 1.75rem;
+				border-radius: 1.75rem;
+				background-color: $color__white;
+				color: $color__blue--dark-desaturated;
 			}
-		}
-
-		&__title {
-			font-size: 4rem;
-			margin: 7rem 0;
 		}
 
 		&__hamburger {
 			display: none;
+		}
+	}
+}
+
+@media (min-width: $viewport--desktop) {
+	.hero {
+		background-image: url("../../images/desktop/image-header.jpg");
+
+		&__title {
+			font-size: 4rem;
+			margin: 7rem 0;
 		}
 	}
 }

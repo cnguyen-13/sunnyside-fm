@@ -1,5 +1,5 @@
 .testimonials {
-	padding: 3rem 0.6rem;
+	padding: $padding__mobile;
 
 	&__title {
 		@include majorFont(uppercase);
@@ -7,7 +7,7 @@
 		font-size: 1rem;
 		letter-spacing: 4px;
 		color: $color__blue--gray;
-		margin: 2rem 0 3rem 0;
+		margin-bottom: 1.5rem;
 	}
 
 	//Reviews
@@ -46,20 +46,20 @@
 
 @media (min-width: $viewport--desktop) {
 	.testimonials {
-		padding: 0;
+		padding: $padding__main;
+
 		&__title {
-			margin: 0 auto;
+			margin: 4rem auto 2rem auto;
 		}
 
 		&__clients {
 			flex-direction: row;
 			justify-content: center;
-			align-items: stretch;
-			//gap: ?;
+			align-items: center;
+			gap: 2rem;
 		}
 
 		&__client {
-			padding: 3rem;
 			flex: 1;
 			width: 0;
 		}

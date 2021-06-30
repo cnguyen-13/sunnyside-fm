@@ -1,7 +1,7 @@
 .hero {
 	@include fullCoverBg();
 	background-image: url("../../images/mobile/image-header.jpg");
-	min-height: 30rem;
+	min-height: 80vh;
 	padding: 2rem 0.6rem;
 
 	&__navbar {
@@ -38,5 +38,34 @@
 
 	&__arrow {
 		@include centerImage();
+	}
+}
+
+@media (min-width: $viewport--desktop) {
+	.hero {
+		background-image: url("../../images/desktop/image-header.jpg");
+
+		&__list {
+			list-style-type: none;
+			display: flex;
+			gap: 3rem;
+		}
+
+		&__link {
+			color: $color__white;
+			text-decoration: none;
+
+			&--contact {
+			}
+		}
+
+		&__title {
+			font-size: 4rem;
+			margin: 7rem 0;
+		}
+
+		&__hamburger {
+			display: none;
+		}
 	}
 }

@@ -37,7 +37,7 @@
 						<a href="#" class="hero__link">Projects</a>
 					</li>
 					<li class="hero__list-item">
-						<a href="#" class="hero__link">Contact</a>
+						<a href="#" class="hero__link hero__link--contact">Contact</a>
 					</li>
 				</ul>
 				<img
@@ -59,13 +59,17 @@
 			<!-- Half and Half Section -->
 			<div class="info">
 				<div class="info__pair">
-					<!-- Use the srcset, size attributes -->
 					<img
+						class="info__image-panel info__image-panel--egg"
+						srcset="
+							./images/mobile/image-transform.jpg  376w,
+							./images/desktop/image-transform.jpg 720w
+						"
+						sizes="(max-width: 768px) 376px,
+            720px"
 						src="./images/mobile/image-transform.jpg"
 						alt=""
-						class="info__image-panel"
 					/>
-					<!-- <div class="info__bg info__bg--egg"></div> -->
 					<section class="info__text">
 						<div class="info__text-content">
 							<h2 class="info__title">Transform your brand</h2>
@@ -78,14 +82,19 @@
 						</div>
 					</section>
 				</div>
+
 				<div class="info__pair">
-					<!-- Use the srcset, size attributes -->
 					<img
+						class="info__image-panel"
+						srcset="
+							./images/mobile/image-stand-out.jpg  750w,
+							./images/desktop/image-stand-out.jpg 720w
+						"
+						sizes="(max-width: 768px) 750px,
+            720px"
 						src="./images/mobile/image-stand-out.jpg"
 						alt=""
-						class="info__image-panel"
 					/>
-					<!-- <div class="info__bg info__bg--cup"></div> -->
 					<section class="info__text">
 						<div class="info__text-content">
 							<h2 class="info__title">Stand out to the right audience</h2>

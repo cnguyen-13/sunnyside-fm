@@ -38,5 +38,19 @@
 
 @media (min-width: $viewport--desktop) {
 	.fruits {
+		display: flex;
+
+		&__panel {
+			width: 0;
+			flex: 1;
+
+			&--cherry {
+				background-image: url("../../images/desktop/image-graphic-design.jpg");
+			}
+
+			&--orange {
+				background-image: url("../../images/desktop/image-photography.jpg");
+			}
+		}
 	}
 }

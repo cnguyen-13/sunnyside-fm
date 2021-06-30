@@ -43,3 +43,12 @@
 		color: $color__blue--gray;
 	}
 }
+
+@media (min-width: $viewport--desktop) {
+	// .testimonials {
+	// 	&__clients {
+	// 		flex-direction: row;
+	// 		align-items: center;
+	// 	}
+	// }
+}

@@ -34,7 +34,8 @@
 	}
 
 	&__name {
-		@include majorFont();
+		@include majorFont(capitalize, 900);
+		font-size: 1.1rem;
 		color: $color__blue--dark-desaturated;
 		margin-bottom: 0.5rem;
 	}
@@ -49,6 +50,7 @@
 		padding: $padding__main;
 
 		&__title {
+			font-size: 1.25rem;
 			margin: 4rem auto 2rem auto;
 		}
 

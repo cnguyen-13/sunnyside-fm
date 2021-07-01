@@ -42,6 +42,7 @@
 
 @media (min-width: $viewport--tablet) {
 	.hero {
+		padding: $padding__nav--tablet;
 		background-image: url("../../images/desktop/image-header.jpg");
 
 		&__list {
@@ -74,8 +75,8 @@
 		background-image: url("../../images/desktop/image-header.jpg");
 
 		&__title {
-			font-size: 4rem;
-			margin: 7rem 0;
+			font-size: 3rem;
+			margin: 8rem 0;
 		}
 	}
 }

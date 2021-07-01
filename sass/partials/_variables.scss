@@ -20,15 +20,16 @@ $font-family--minor: "Barlow", sans-serif;
 $font-size--main: 18px;
 
 //Padding
-$padding__nav: 2rem 0.6rem;
-$padding__mobile: 3rem 0.6rem;
+$padding__nav: 2rem 1.1rem;
+$padding__nav--tablet: 2rem 3%;
+$padding__mobile: 3rem 1.1rem;
 $padding__main: 5% 9%;
 $padding__fruits: 4% 13%;
 $padding__cta: 0 0.5rem;
 
 //Heights
 $height__hero: clamp(30rem, calc(100vw * 0.75), 51rem);
-$height__fruits: clamp(30rem, calc(100vw * 0.25), 40rem);
+$height__fruits: clamp(32rem, calc(100vw * 0.5), 35rem);
 
 //Breakpoints
 $viewport--tablet: 768px;

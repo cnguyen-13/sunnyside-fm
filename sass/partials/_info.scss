@@ -37,6 +37,12 @@
 		position: relative;
 		padding: $padding__cta;
 
+		&:hover {
+			&::after {
+				opacity: 1;
+			}
+		}
+
 		&::after {
 			@include customUnderline();
 		}

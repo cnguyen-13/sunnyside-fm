@@ -61,6 +61,12 @@
 				border-radius: 1.75rem;
 				background-color: $color__white;
 				color: $color__blue--dark-desaturated;
+				transition: color 0.3s ease-out, background-color 0.3s ease-out;
+
+				&:hover {
+					background-color: rgba($color: #fff, $alpha: 0.4);
+					color: $color__white;
+				}
 			}
 		}
 

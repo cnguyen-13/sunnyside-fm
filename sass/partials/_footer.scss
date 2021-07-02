@@ -29,6 +29,19 @@
 	&__link {
 		color: $color__cyan--moderate;
 		text-decoration: none;
+		transition: color 0.3s ease-out;
+
+		&:hover {
+			color: $color__white;
+		}
+	}
+
+	&__link-image {
+		transition: fill 0.3s ease-out;
+
+		&:hover {
+			fill: $color__white;
+		}
 	}
 
 	&__attribution {

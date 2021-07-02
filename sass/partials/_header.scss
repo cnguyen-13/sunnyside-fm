@@ -32,7 +32,8 @@
 		text-align: center;
 		color: $color__white;
 		letter-spacing: 0.4rem;
-		margin: 4rem 0 3rem 0;
+		margin: 3rem 0;
+		font-size: 2.25rem;
 	}
 
 	&__arrow {
@@ -81,7 +82,7 @@
 		background-image: url("../../images/desktop/image-header.jpg");
 
 		&__title {
-			font-size: 3rem;
+			font-size: 3.1rem;
 			margin: 8rem 0;
 		}
 	}

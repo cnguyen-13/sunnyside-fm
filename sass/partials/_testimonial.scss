@@ -47,11 +47,11 @@
 
 @media (min-width: $viewport--desktop) {
 	.testimonials {
-		padding: $padding__main;
+		padding: $padding__testimonial;
 
 		&__title {
 			font-size: 1.25rem;
-			margin: 4rem auto 2rem auto;
+			margin-bottom: 2rem;
 		}
 
 		&__clients {

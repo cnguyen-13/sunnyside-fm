@@ -18,7 +18,7 @@
 @mixin customUnderline() {
 	content: "";
 	position: absolute;
-	opacity: 0.3;
+	opacity: 0.25;
 	bottom: -0.05rem;
 	left: 0;
 	z-index: -1;

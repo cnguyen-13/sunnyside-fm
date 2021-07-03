@@ -40,4 +40,28 @@
 }
 
 //hover effect
-//border
+@mixin hoverEffect($property, $value) {
+	&:hover {
+		#{$property}: $value;
+	}
+}
+
+@mixin triangle() {
+	&::before {
+		content: "";
+		border-left: 14px solid transparent;
+		border-top: 14px solid transparent;
+		border-right: 14px solid $color__white;
+		border-bottom: 14px solid $color__white;
+		position: absolute;
+		top: -$height__triangle;
+		top: -26px;
+		right: 0;
+	}
+
+	@media (min-width: $viewport--tablet) {
+		&::before {
+			display: none;
+		}
+	}
+}

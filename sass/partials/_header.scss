@@ -11,35 +11,22 @@
 		position: relative;
 	}
 
-	&__logo {
-	}
-
 	&__list {
 		// display: none;
 		// opacity: 0;
+		// ADJUST THIS BY TABLET VIEW
+		@include triangle();
 		height: 20rem;
 		padding: $padding__mobile;
 		width: 100%;
 		position: absolute;
-		top: 4.5rem; //edit later
+		top: 4.5rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		background-color: $color__white;
 		gap: 2.5rem;
-
-		&::before {
-			content: "";
-			border-left: 14px solid transparent;
-			border-top: 14px solid transparent;
-			border-right: 14px solid $color__white;
-			border-bottom: 14px solid $color__white;
-			position: absolute;
-			top: -$height__triangle;
-			top: -26px;
-			right: 0;
-		}
 	}
 
 	&__list-item {
@@ -58,12 +45,6 @@
 			border-radius: 1.75rem;
 			background-color: $color__yellow;
 			color: $color__blue--dark-desaturated;
-			transition: color 0.3s ease-out, background-color 0.3s ease-out;
-
-			&:hover {
-				background-color: rgba($color: #fff, $alpha: 0.4);
-				color: $color__white;
-			}
 		}
 	}
 
@@ -92,24 +73,23 @@
 
 		&__list {
 			flex-direction: row;
-			gap: 2.5rem;
+			justify-content: flex-end;
+			position: static;
+			padding: 0;
+			background-color: transparent;
+			width: auto;
+			height: auto;
 		}
 
 		&__link {
 			color: $color__white;
 
 			&--contact {
-				@include majorFont(uppercase);
-				padding: 1rem 1.75rem;
-				border-radius: 1.75rem;
-				background-color: $color__white;
+				@include hoverEffect(background-color, $color__white--transparent);
+				@include hoverEffect(color, $color__white);
 				color: $color__blue--dark-desaturated;
+				background-color: $color__white;
 				transition: color 0.3s ease-out, background-color 0.3s ease-out;
-
-				&:hover {
-					background-color: rgba($color: #fff, $alpha: 0.4);
-					color: $color__white;
-				}
 			}
 		}
 

@@ -8,19 +8,63 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		position: relative;
 	}
 
 	&__logo {
 	}
 
 	&__list {
-		display: none;
+		// display: none;
+		// opacity: 0;
+		height: 20rem;
+		padding: $padding__mobile;
+		width: 100%;
+		position: absolute;
+		top: 4.5rem; //edit later
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: $color__white;
+		gap: 2.5rem;
+
+		&::before {
+			content: "";
+			border-left: 14px solid transparent;
+			border-top: 14px solid transparent;
+			border-right: 14px solid $color__white;
+			border-bottom: 14px solid $color__white;
+			position: absolute;
+			top: -$height__triangle;
+			top: -26px;
+			right: 0;
+		}
 	}
 
 	&__list-item {
+		list-style-type: none;
 	}
 
 	&__link {
+		color: $color__blue--dark-gray;
+		text-decoration: none;
+		font-size: 1rem;
+
+		&--contact {
+			@include majorFont(uppercase);
+			font-size: 0.8rem;
+			padding: 1rem 1.75rem;
+			border-radius: 1.75rem;
+			background-color: $color__yellow;
+			color: $color__blue--dark-desaturated;
+			transition: color 0.3s ease-out, background-color 0.3s ease-out;
+
+			&:hover {
+				background-color: rgba($color: #fff, $alpha: 0.4);
+				color: $color__white;
+			}
+		}
 	}
 
 	&__hamburger {
@@ -32,7 +76,7 @@
 		text-align: center;
 		color: $color__white;
 		letter-spacing: 0.4rem;
-		margin: 3rem 0;
+		margin: 5rem 0;
 		font-size: 2.25rem;
 	}
 
@@ -47,14 +91,12 @@
 		background-image: url("../../images/desktop/image-header.jpg");
 
 		&__list {
-			list-style-type: none;
-			display: flex;
+			flex-direction: row;
 			gap: 2.5rem;
 		}
 
 		&__link {
 			color: $color__white;
-			text-decoration: none;
 
 			&--contact {
 				@include majorFont(uppercase);

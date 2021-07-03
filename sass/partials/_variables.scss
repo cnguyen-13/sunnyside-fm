@@ -29,8 +29,12 @@ $padding__fruits: 4% 13%;
 $padding__cta: 0 0.5rem;
 
 //Heights
-$height__hero: clamp(30rem, calc(100vw * 0.75), 51rem);
+$height__hero: clamp(35rem, calc(100vw * 0.75), 51rem);
 $height__fruits: clamp(32rem, calc(100vw * 0.5), 35rem);
+$height__triangle: 24px;
+
+//Widths
+$width__triangle: $height__triangle;
 
 //Breakpoints
 $viewport--tablet: 768px;

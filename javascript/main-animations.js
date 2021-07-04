@@ -46,8 +46,7 @@ textPanels.forEach(panel => {
 fruitPanels.forEach((panel, idx) => {
 	gsap.from(panel, {
 		opacity: 0,
-		xPercent: idx === 0 ? 50 : -50,
-		width: 0,
+		height: 0,
 		duration: 1,
 		ease: Power3.easeOut,
 		scrollTrigger: {

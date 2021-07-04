@@ -1,10 +1,11 @@
-let isListActive = window.innerWidth >= 768 ? false : true
+let isListActive = false
+const TABLET_SIZE = 768
 const hamburger = document.querySelector(".hero__hamburger")
 const list = document.querySelector(".hero__list")
 const listItems = gsap.utils.toArray(".hero__list-item")
+
 const hamburgerTl = gsap.timeline({ paused: true })
 
-//animation
 hamburgerTl
 	.from(list, {
 		display: "none",
@@ -26,16 +27,27 @@ hamburgerTl
 	)
 
 function playAnimation() {
-	!isListActive ? hamburgerTl.play() : hamburgerTl.reverse()
+	if (!isListActive && window.innerWidth <= TABLET_SIZE) {
+		hamburgerTl.play()
+	} else {
+		hamburgerTl.reverse()
+	}
+
 	isListActive = !isListActive
 }
 
 function makeListActive() {
-	if (window.innerWidth >= 768) {
+	if (window.innerWidth >= TABLET_SIZE) {
 		isListActive = true
 		hamburgerTl.play()
+	} else {
+		isListActive = false
+		hamburgerTl.restart()
+		hamburgerTl.pause()
 	}
 }
+
+makeListActive()
 
 //event listeners
 hamburger.addEventListener("click", playAnimation)

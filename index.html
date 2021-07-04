@@ -14,9 +14,17 @@
 			sizes="32x32"
 			href="./images/favicons/favicon-32x32.png"
 		/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" defer></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"
+			defer
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"
+			defer
+		></script>
 		<script src="./javascript/hamburger.js" defer></script>
-    <title>Frontend Mentor | Sunnyside agency landing page</title>
+		<script src="./javascript/main-animations.js" defer></script>
+		<title>Frontend Mentor | Sunnyside agency landing page</title>
 	</head>
 
 	<body>
@@ -51,17 +59,18 @@
 				/>
 			</nav>
 			<h1 class="hero__title">We are creatives</h1>
-			<img
-				class="hero__arrow"
-				src="./images/hero/icon-arrow-down.svg"
-				alt="Arrow pointing downwards"
-			/>
+			<a href="#info">
+				<img
+					class="hero__arrow"
+					src="./images/hero/icon-arrow-down.svg"
+					alt="Arrow pointing downwards"
+			/></a>
 		</header>
 		<!-- End of Hero Section -->
 
 		<main>
 			<!-- Half and Half Section -->
-			<div class="info">
+			<div class="info" id="info">
 				<div class="info__pair">
 					<img
 						class="info__image-panel info__image-panel--egg"

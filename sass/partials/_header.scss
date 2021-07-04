@@ -12,9 +12,6 @@
 	}
 
 	&__list {
-		// display: none;
-		// opacity: 0;
-		// ADJUST THIS BY TABLET VIEW
 		@include triangle();
 		height: 20rem;
 		padding: $padding__mobile;
